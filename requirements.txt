@@ -10,7 +10,6 @@ pypdf==4.2.0
 yfinance==0.2.43
 torch==2.5.1
 torchvision==0.22.1
-torchaudio==2.2.2
 sentence-transformers==2.7.0
 transformers==4.41.2
 pandas==2.2.2
