@@ -8,7 +8,7 @@ faiss-cpu==1.8.0
 tiktoken==0.7.0
 pypdf==4.2.0
 yfinance==0.2.43
-torch==2.2.2
+torch==2.5.1
 torchvision==0.17.2
 torchaudio==2.2.2
 sentence-transformers==2.7.0
