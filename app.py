@@ -1,5 +1,6 @@
 import streamlit as st
 import os
+import sys
 import pandas as pd
 import plotly.graph_objects as go
 from PIL import Image
@@ -13,6 +14,8 @@ from utils.chart_analysis import load_blip2_model, generate_chart_caption
 from utils.ai_summary import generate_ai_comparison_summary
 from utils.pdf_report import generate_pdf_report
 from utils.highlights_table import highlight_better
+
+st.write("Python version on Streamlit Cloud:", sys.version)
 
 # --- PAGE CONFIG ---
 st.set_page_config(page_title="Financial Multi-Modal RAG Dashboard", page_icon="💰", layout="wide")
