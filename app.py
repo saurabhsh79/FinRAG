@@ -9,8 +9,6 @@ from langchain.schema import Document
 # Import our modules
 from utils.data_fetcher import fetch_financial_data
 from utils.rag_engine import process_pdf, add_docs_to_rag
-from utils.sentiment_analysis import load_sentiment_model, analyze_sentiment
-from utils.chart_analysis import load_blip2_model, generate_chart_caption
 from utils.highlights_table import highlight_better
 
 st.write("Python version on Streamlit Cloud:", sys.version)
@@ -26,10 +24,6 @@ if not OPENAI_API_KEY:
     st.sidebar.warning("Please enter your OpenAI API Key.")
     st.stop()
 os.environ["OPENAI_API_KEY"] = OPENAI_API_KEY
-
-# --- LOAD MODELS ---
-sentiment_analyzer = load_sentiment_model()
-blip_processor, blip_model = load_blip2_model()
 
 # --- SESSION STATE ---
 if "qa_history" not in st.session_state:
